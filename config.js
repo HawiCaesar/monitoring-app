@@ -9,7 +9,8 @@ environments.staging = {
 	'httpPort': 3000,
 	'httpsPort': 3001,
 	'envName': 'staging',
-	'hashingSecret': 'thisIsASecret'
+	'hashingSecret': 'thisIsASecret',
+	'maxCheckLimit': 5
 }
 
 // production
@@ -17,7 +18,8 @@ environments.production = {
 	'httpPort': 6000,
 	'httpsPort': 6001,
 	'envName': 'production',
-	'hashingSecret': 'thisIsASecretAgain'
+	'hashingSecret': 'thisIsASecretAgain',
+	'maxCheckLimit': 5
 }
 
 // check which should be used
