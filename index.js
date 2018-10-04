@@ -9,7 +9,10 @@ const fs = require('fs');
 const handlers = require('./lib/handlers');
 const helpers = require('./lib/helpers');
 
-
+//@TODO remove this
+helpers.sendTwilioSMS('4733806122', 'Hello!', (error) => {
+	console.log('this was the error', error);
+});
 
 // instantiate http server
 const httpServer = http.createServer((req, res) => {
